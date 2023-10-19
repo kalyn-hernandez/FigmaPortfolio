@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="home-page">
+      <div id="nav-holder" > </div>
+
+      <div id="footer-holder" > </div>
+
+
+      <div class="header-section">
+        <div class="header-content">
+          <div class="title-subtitle">
+            <div class="text-wrapper-2">Branding | Image making</div>
+            <div class="text-wrapper-3">Visual Designer</div>
+            <p class="text-wrapper-4">
+              This is a template Figma file, turned into code using Anima. <br />Learn more at AnimaApp.com
+            </p>
+          </div>
+          <a href="https://www.animaapp.com" target="_blank" rel="noopener noreferrer"
+            ><div class="button"><div class="text-wrapper-5">Contact</div></div></a
+          >
+        </div>
+        <img class="headerimage" src="img/headerimage-1.png" />
+      </div>
+      <div class="gallery-section">
+        <div class="text-wrapper-6">Latest work</div>
+        <div class="cards-section">
+          <div class="div-2">
+            <img class="image" src="img/image-3.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">InForm</div>
+              <div class="text-wrapper-4">UI/UX Project</div>
+            </div>
+          </div>
+          <div class="div-2">
+            <img class="image" src="img/image-4.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">Bodoni</div>
+              <div class="text-wrapper-4">Brochure</div>
+            </div>
+          </div>
+          <div class="div-2">
+            <img class="image" src="img/image.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">Day Break</div>
+              <div class="text-wrapper-4">Can Design</div>
+            </div>
+          </div>
+          <div class="div-2">
+            <img class="image" src="img/image-5.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">City Logos</div>
+              <div class="text-wrapper-4">Design</div>
+            </div>
+          </div>
+          <div class="div-2">
+            <img class="image" src="img/image-6.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">Bananas Bread</div>
+              <div class="text-wrapper-4">Magazine</div>
+            </div>
+          </div>
+          <div class="div-2">
+            <img class="image" src="img/image-2.png" />
+            <div class="title-description">
+              <div class="text-wrapper-2">Thirst Thursday</div>
+              <div class="text-wrapper-4">Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-holder" > </div>
+
+    </div>
+  </body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+$("#nav-holder").replaceWith(data);
+});
+$.get("footer.html", function(data){
+$("#footer-holder").replaceWith(data);
+});
+</script>  
